@@ -1,0 +1,26 @@
+{
+  "Albums": [
+    {
+      "id": "1",
+      "title": "aaaaaaaaaa",
+      "creationDate": null,
+      "archived": 1,
+      "coverPicture": "assets/2.jpg"
+    },
+    {
+      "id": "2",
+      "title": "bbbbbbbbbbbbbb",
+      "creationDate": null,
+      "archived": 0,
+      "coverPicture": "assets/1.jpg"
+    },
+    {
+      "id": "3",
+      "title": "ccccccccc",
+      "creationDate": null,
+      "archived": 0,
+      "coverPicture": "assets/3.jpg"
+    }
+  ],
+  "Photos": []
+}

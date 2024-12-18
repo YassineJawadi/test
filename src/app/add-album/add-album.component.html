@@ -1,0 +1,19 @@
+<div>
+  <form #f="ngForm">
+    <div>
+      <label>titre</label>
+      <input type="text" name="titre" [(ngModel)]="album.title" required #titre="ngModel">
+      <div *ngIf="titre.invalid && titre.touched">champ obligatoire</div>
+    </div>
+    <div>
+      <label>photo de couverture</label>
+      <input type="text" name="titre" [(ngModel)]="album.coverPicture" minlength="5" #coverPicture="ngModel">
+      <div *ngIf="coverPicture.invalid && coverPicture.touched">
+        <span *ngIf="coverPicture.errors!['minlength']"> Minimum 5 caractères </span>
+      </div>
+    </div>
+    <div >
+      <input type="submit" [disabled]="f.invalid" value="ajouter" class="btn btn-primary" (click)="ajouter()">
+    </div>
+  </form>
+</div>
